@@ -10,10 +10,10 @@ const nextConfig = {
     if (!options.isServer) {
       config.plugins.push(
         new NextFederationPlugin({
-          name: 'host',
+          name: 'container',
           remotes: {
-            movies: "movies@http://localhost:3005/_next/static/chunks/remoteMovieEntry.js",
-            remote_share_movie: "remote_share_movie@http://localhost:8080/remoteEntry.js"
+            movies: "movies@https://gilded-bonbon-7a0c8d.netlify.app/_next/static/chunks/remoteMovieEntry.js",
+            remote_share_movie: "remote_share_movie@https://vocal-blancmange-29e14f.netlify.app/remoteEntry.js"
           },
           exposes: {},
           extraOptions: {
