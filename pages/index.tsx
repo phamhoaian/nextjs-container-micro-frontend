@@ -1,4 +1,4 @@
-// import type { NextPage } from 'next'
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 
@@ -7,7 +7,7 @@ const RemoteMovieList = dynamic(
   { ssr: false }
 )
 
-const Home = () => {
+const Home: NextPage = () => {
   return (
     <>
       <Head>

@@ -1,4 +1,4 @@
-// import type { NextPage } from 'next'
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import React from 'react'
@@ -7,7 +7,7 @@ const RemoteShareMovie = dynamic(
   { ssr: false }
 )
 
-const ShareMovie = () => {
+const ShareMovie: NextPage = () => {
   return (
     <>
       <Head>
